@@ -1,0 +1,13 @@
+Package: testinit
+Title: Testing 'rjd3toolkit'
+Version: 0.0.0.9000
+Authors@R: 
+    person("Tanguy", "Barthelemy", , "tanguy.barthelemy@insee.fr", role = c("aut", "cre"))
+Description: Implement the function plus one.
+Depends:
+    R (>= 4.1)
+Imports:
+    rjd3toolkit
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
