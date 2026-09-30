@@ -4,10 +4,12 @@
 \alias{f}
 \title{Plus one}
 \usage{
-f(x)
+f(x, ...)
 }
 \arguments{
 \item{x}{a numeric}
+
+\item{\dots}{Other numerics}
 }
 \value{
 The input \code{x} added of 1
