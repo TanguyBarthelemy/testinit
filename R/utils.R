@@ -2,6 +2,7 @@
 #' @title Plus one
 #'
 #' @param x a numeric
+#' @param \dots Other numerics
 #'
 #' @returns The input `x` added of 1
 #' @export
