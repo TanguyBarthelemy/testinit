@@ -1,13 +1,23 @@
 
-#' @title Plus one
+#' @title New fun g
 #'
 #' @param x a numeric
 #'
-#' @returns The input `x` added of 1
 #' @export
-#'
-#' @examples
-#' f(1)
+g <- function(x) {
+    return(f(x) / 2)
+}
+
 f <- function(x) {
-    return(x + 1)
+    UseMethod("f", x)
+}
+
+#' @export
+f.a <- function(x) {
+    2 * x
+}
+
+#' @export
+f.default <- function(x) {
+    3 * x
 }
