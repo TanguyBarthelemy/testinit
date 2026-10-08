@@ -5,19 +5,19 @@
 #'
 #' @export
 g <- function(x) {
-    return(f(x) / 2)
+    UseMethod("g", x)
 }
 
+#' @export
+g.a <- function(x) {
+    return(f(x) / 3)
+}
+
+#' @title New fun f
+#'
+#' @param x a numeric
+#'
+#' @export
 f <- function(x) {
-    UseMethod("f", x)
-}
-
-#' @export
-f.a <- function(x) {
-    2 * x
-}
-
-#' @export
-f.default <- function(x) {
-    3 * x
+    return(2 * x)
 }
